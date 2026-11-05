@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +9,15 @@
     <title>My Personal Website</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #f0f4f8;
-            color: #333;
+            background: #f1f5f9;
+            color: #1e293b;
         }
 
         header {
@@ -23,7 +28,7 @@
         }
 
         header h1 {
-            font-size: 32px;
+            font-size: 36px;
             margin-bottom: 10px;
         }
 
@@ -37,29 +42,39 @@
             color: white;
             text-decoration: none;
             margin: 10px;
+            font-size: 18px;
         }
 
         main {
-            max-width: 600px;
+            max-width: 750px;
             margin: 30px auto;
             padding: 25px;
-            background: white;
-            border-radius: 12px;
             text-align: center;
+            background: white;
+            border-radius: 15px;
         }
 
-        button {
+        .profile {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #1d5b96;
+        }
+
+        .button {
+            display: inline-block;
             background: #123c69;
             color: white;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
+            padding: 14px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin: 10px;
         }
 
         footer {
             text-align: center;
-            padding: 20px;
+            padding: 25px;
         }
     </style>
 </head>
@@ -78,21 +93,33 @@
     </nav>
 
     <main>
-        <h2>Hello, welcome!</h2>
-        <p>I am learning web development.</p>
-        <p>My dream is to become a software engineer.</p>
+        <img src="myphoto.jpg" alt="My photo" class="profile">
 
-        <button onclick="alert('Thank you for visiting my website!')">
-            Click Me
-        </button>
+        <h2>Hello, welcome!</h2>
+
+        <p>I am learning web development.</p>
+
+        <p>
+            bro this is 1in2.
+        </p>
+
+        <h3>My Skills</h3>
+
+        <p>HTML, CSS and website design.</p>
+
+        <h3>My Project</h3>
+
+        <p>This personal website is one of my first projects.</p>
+
+        <a href="about.html" class="button">Learn More</a>
+
+        <a href="contact.html" class="button">Contact Me</a>
     </main>
-    <img src="myphoto.jpg" alt="My photo"
-     style="width:150px; height:150px;
-     border-radius:50%; object-fit:cover;">
-           
+
     <footer>
-        <p>© 2026 My Personal Website</p>
+        <p>&copy; 2026 My Personal Website</p>
     </footer>
 
 </body>
 </html>
+
