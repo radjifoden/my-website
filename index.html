@@ -1,110 +1,204 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Radji Feeds | Poultry & Animal Feeds</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #263326;
-      background: #f5f8f1;
-    }
-    header {
-      background: #236b35;
-      color: white;
-      text-align: center;
-      padding: 30px 15px;
-    }
-    header h1 { margin-bottom: 8px; }
-    nav {
-      background: #184d27;
-      padding: 12px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    main {
-      max-width: 850px;
-      margin: auto;
-      padding: 20px;
-    }
-    section {
-      background: white;
-      margin: 18px 0;
-      padding: 20px;
-      border-radius: 10px;
-    }
-    h2 { color: #236b35; }
-    .contact a {
-      display: inline-block;
-      margin: 6px 8px 6px 0;
-      color: #236b35;
-      font-weight: bold;
-    }
-    footer {
-      background: #184d27;
-      color: white;
-      text-align: center;
-      padding: 15px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radji Gifts & Wine</title>
+
+<style>
+* {box-sizing:border-box}
+body {
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#101010;
+  color:white;
+}
+header {
+  text-align:center;
+  padding:35px 15px;
+  background:#080808;
+  border-bottom:2px solid #c9a227;
+}
+header h1 {
+  color:#d4af37;
+  font-size:32px;
+  margin:5px;
+}
+header p {color:#ddd}
+nav {
+  background:#c9a227;
+  padding:14px;
+  text-align:center;
+}
+nav a {
+  color:#111;
+  text-decoration:none;
+  font-weight:bold;
+  margin:0 10px;
+}
+.hero {
+  text-align:center;
+  padding:65px 20px;
+  background:linear-gradient(#0009,#000b),
+  url('https://images.unsplash.com/photo-1513201099705-a9746e1e201f?w=1200');
+  background-size:cover;
+  background-position:center;
+}
+.hero h2 {
+  color:#e3bd49;
+  font-size:30px;
+}
+.hero p {font-size:17px}
+.btn {
+  display:inline-block;
+  background:#d4af37;
+  color:#111;
+  padding:13px 22px;
+  margin-top:12px;
+  text-decoration:none;
+  border-radius:5px;
+  font-weight:bold;
+}
+section {
+  padding:30px 18px;
+  text-align:center;
+}
+section h2 {
+  color:#d4af37;
+}
+.products {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+  gap:15px;
+  max-width:950px;
+  margin:auto;
+}
+.product {
+  background:#202020;
+  border:1px solid #a88727;
+  border-radius:10px;
+  padding:18px 10px;
+}
+.product .emoji {font-size:42px}
+.product h3 {color:#e4c45a}
+.contact {
+  background:#202020;
+}
+.contact a {
+  color:#e4c45a;
+  display:block;
+  margin:13px;
+  text-decoration:none;
+  font-weight:bold;
+}
+footer {
+  background:#080808;
+  color:#aaa;
+  text-align:center;
+  padding:20px;
+  border-top:1px solid #c9a227;
+}
+</style>
 </head>
+
 <body>
-  <header>
-    <h1>Radji Feeds</h1>
-    <p>Poultry and Animal Feeds</p>
-    <p>Quality feeds for healthy and productive animals</p>
-  </header>
 
-  <nav>
-    <a href="#products">Products</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header>
+<h1>RADJI GIFTS & WINE</h1>
+<p>Make Every Moment Special</p>
+</header>
 
-  <main>
-    <section id="products">
-      <h2>Our Products</h2>
-      <ul>
-        <li>Broiler starter, grower and finisher feeds</li>
-        <li>Layers mash and layers pellets</li>
-        <li>Chick mash and growers mash</li>
-        <li>Pig feeds</li>
-        <li>Cattle and other animal feeds</li>
-        <li>Other poultry and animal feeds</li>
-      </ul>
-      <p>Contact us to ask about availability and prices.</p>
-    </section>
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
 
-    <section id="about">
-      <h2>About Radji Feeds</h2>
-      <p>
-        Radji Feeds supplies poultry and animal feeds to farmers.
-        Visit us for your poultry and livestock feeding needs.
-      </p>
-    </section>
+<div class="hero" id="home">
+<h2>Gifts That Speak From The Heart</h2>
+<p>Beautiful gifts, wine and celebration packages.</p>
+<a class="btn" href="#products">Explore Our Products</a>
+</div>
 
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <p><strong>Location:</strong> Matugga, near the gas line</p>
-      <p><strong>Call:</strong></p>
-      <a href="tel:0703595907">0703 595 907</a>
-      <a href="tel:0777420505">0777 420 505</a>
-      <a href="tel:0750690408">0750 690 408</a>
-    </section>
-  </main>
+<section id="products">
+<h2>Our Products</h2>
+<div class="products">
 
-  <footer>
-    <p>© 2026 Radji Feeds</p>
-  </footer>
+<div class="product">
+<div class="emoji">🍷</div>
+<h3>Wine</h3>
+<p>Red, white, rosé and sparkling wine.</p>
+</div>
+
+<div class="product">
+<div class="emoji">🧸</div>
+<h3>Teddy Bears</h3>
+<p>Beautiful gifts for special people.</p>
+</div>
+
+<div class="product">
+<div class="emoji">🎁</div>
+<h3>Gift Hampers</h3>
+<p>Specially prepared gift packages.</p>
+</div>
+
+<div class="product">
+<div class="emoji">🌹</div>
+<h3>Flowers & Balloons</h3>
+<p>Perfect for birthdays and anniversaries.</p>
+</div>
+
+<div class="product">
+<div class="emoji">🌸</div>
+<h3>Perfumes</h3>
+<p>Beautiful fragrances and body sprays.</p>
+</div>
+
+<div class="product">
+<div class="emoji">🍫</div>
+<h3>Chocolates</h3>
+<p>Sweet treats for every occasion.</p>
+</div>
+
+<div class="product">
+<div class="emoji">⌚</div>
+<h3>Watches</h3>
+<p>Stylish accessories for gifting.</p>
+</div>
+
+<div class="product">
+<div class="emoji">🎈</div>
+<h3>Party Decorations</h3>
+<p>Make your celebrations memorable.</p>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+<h2>About Radji Gifts & Wine</h2>
+<p>We bring you beautiful gifts, wine and celebration essentials at affordable prices.</p>
+<p>Visit our shop in Matugga, near the gas line.</p>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p>Call or WhatsApp us to make an order.</p>
+
+<a href="tel:0703595907">0703 595 907</a>
+<a href="tel:0777420505">0777 420 505</a>
+<a href="tel:0750690408">0750 690 408</a>
+
+<a class="btn" href="https://wa.me/256703595907">Order on WhatsApp</a>
+
+<p>Location: Matugga, near the gas line</p>
+</section>
+
+<footer>
+<p>© 2026 Radji Gifts & Wine</p>
+<p>Thank you for choosing us!</p>
+</footer>
+
 </body>
 </html>
